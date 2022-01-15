@@ -1,0 +1,5180 @@
+[
+    {
+        "id": "45818cf04cbf91f2",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "2a13e96f16ed63a2",
+        "type": "subflow",
+        "name": "Subflow 1",
+        "info": "",
+        "category": "",
+        "in": [],
+        "out": [],
+        "env": [],
+        "meta": {},
+        "color": "#DDAA99"
+    },
+    {
+        "id": "4eb749c45679c0b7",
+        "type": "subflow",
+        "name": "Subflow 2",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "4d2ba9cfebf0befb",
+        "type": "subflow",
+        "name": "Subflow 3",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "56e0a59eadada2e6",
+        "type": "subflow",
+        "name": "Subflow 4",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "a84547477b2c265e",
+        "type": "subflow",
+        "name": "Subflow 5",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "6262f3ed24d5192a",
+        "type": "subflow",
+        "name": "Subflow 6",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "5d79734d69042be4",
+        "type": "subflow",
+        "name": "Subflow 7",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "f7493c698b60bc56",
+        "type": "subflow",
+        "name": "Subflow 8",
+        "info": "",
+        "in": [],
+        "out": []
+    },
+    {
+        "id": "6b4132203df3306d",
+        "type": "group",
+        "z": "45818cf04cbf91f2",
+        "style": {
+            "stroke": "#999999",
+            "stroke-opacity": "1",
+            "fill": "none",
+            "fill-opacity": "1",
+            "label": true,
+            "label-position": "nw",
+            "color": "#a4a4a4"
+        },
+        "nodes": [
+            "b182bdf20d0ac4b8",
+            "1d8473052a950164",
+            "4f12f39570287c4c",
+            "971b8e91f665298c",
+            "e5cf3baa48c6e07d",
+            "7d99d11743edb854",
+            "64bd05fac5902663",
+            "cb90d19ecc8eddee",
+            "fb5e7a7b603bbc33",
+            "8050f054ba11c70c",
+            "decdec2513af1329",
+            "a39e49a771b201f6",
+            "7a5202e5513e866a",
+            "19f3de6eb8e2f3bc",
+            "f8a120c613df06a9"
+        ],
+        "x": 14,
+        "y": 359,
+        "w": 812,
+        "h": 322
+    },
+    {
+        "id": "4c4edb30b951f7f0",
+        "type": "mqtt-broker",
+        "name": "Aedes MQTT",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "tes",
+        "birthQos": "0",
+        "birthPayload": "birth",
+        "birthMsg": {},
+        "closeTopic": "tes",
+        "closeQos": "0",
+        "closePayload": "close",
+        "closeMsg": {},
+        "willTopic": "tes",
+        "willQos": "0",
+        "willPayload": "will",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "fc95b4bc0b9795a3",
+        "type": "ui_group",
+        "name": "test",
+        "tab": "443ae228f381f07e",
+        "order": 1,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "f30158f0a83e28ed",
+        "type": "ui_group",
+        "name": "Timer Meja",
+        "tab": "0c3721d6e21a3f20",
+        "order": 13,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "9ee7ba2c3be6b411",
+        "type": "ui_group",
+        "name": "Meja 1",
+        "tab": "0c3721d6e21a3f20",
+        "order": 2,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "07a705f852a1b869",
+        "type": "ui_group",
+        "name": "Timer Countdown",
+        "tab": "0c3721d6e21a3f20",
+        "order": 14,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "0c3721d6e21a3f20",
+        "type": "ui_tab",
+        "name": "Smart Contactor",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1937cb775e5a62cb",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#0094ce",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#0094ce",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#20c200",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#f7f7f7",
+                    "edited": true
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-backgroundColor": {
+                    "value": "#20c200",
+                    "edited": true
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Meja Lab. Schneider",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "none",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "bf05057a292d1fae",
+        "type": "ui_spacer",
+        "z": "45818cf04cbf91f2",
+        "name": "spacer",
+        "group": "390c821dd95ee192",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "443ae228f381f07e",
+        "type": "ui_tab",
+        "name": "dev",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "e7dbed7335441500",
+        "type": "ui_group",
+        "name": "Judul",
+        "tab": "0c3721d6e21a3f20",
+        "order": 1,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dcf7a56b5d16f925",
+        "type": "ui_group",
+        "name": "foo",
+        "tab": "443ae228f381f07e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3d0be2025415dd2d",
+        "type": "ui_group",
+        "name": "UDP Scan",
+        "tab": "0c3721d6e21a3f20",
+        "order": 12,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "a3fe2400c786104a",
+        "type": "ui_group",
+        "name": "Group 13",
+        "tab": "0c3721d6e21a3f20",
+        "order": 15,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5acb75340abbe793",
+        "type": "ui_spacer",
+        "z": "45818cf04cbf91f2",
+        "name": "spacer",
+        "group": "a3fe2400c786104a",
+        "order": 13,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "9d9237c7e14333d1",
+        "type": "ui_spacer",
+        "z": "45818cf04cbf91f2",
+        "name": "spacer",
+        "group": "a3fe2400c786104a",
+        "order": 13,
+        "width": "6",
+        "height": "1"
+    },
+    {
+        "id": "391cce082a7b7a1f",
+        "type": "ui_group",
+        "name": "Footer",
+        "tab": "0c3721d6e21a3f20",
+        "order": 16,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "865f2cc36e65432e",
+        "type": "ui_group",
+        "name": "Meja 2",
+        "tab": "0c3721d6e21a3f20",
+        "order": 3,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "3eef1f70114061da",
+        "type": "ui_group",
+        "name": "Meja 3",
+        "tab": "0c3721d6e21a3f20",
+        "order": 4,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "baf538a66c94f5f8",
+        "type": "ui_group",
+        "name": "Meja 4",
+        "tab": "0c3721d6e21a3f20",
+        "order": 5,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "6595dc7bdf5248a2",
+        "type": "ui_group",
+        "name": "Meja 5",
+        "tab": "0c3721d6e21a3f20",
+        "order": 7,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "4fa488d32a7d45c2",
+        "type": "ui_group",
+        "name": "Meja 6",
+        "tab": "0c3721d6e21a3f20",
+        "order": 8,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "616f523aba464b55",
+        "type": "ui_group",
+        "name": "Meja 7",
+        "tab": "0c3721d6e21a3f20",
+        "order": 9,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "b633c248c6fc2dad",
+        "type": "ui_group",
+        "name": "Meja 8",
+        "tab": "0c3721d6e21a3f20",
+        "order": 10,
+        "disp": false,
+        "width": "6",
+        "collapse": false,
+        "className": "meja"
+    },
+    {
+        "id": "464e97acc22bf0dc",
+        "type": "ui_group",
+        "name": "Spacer Mid",
+        "tab": "0c3721d6e21a3f20",
+        "order": 6,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c0f1ffbd16bd257b",
+        "type": "ui_group",
+        "name": "Spacer Bot",
+        "tab": "0c3721d6e21a3f20",
+        "order": 11,
+        "disp": false,
+        "width": "24",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "be26b35251046708",
+        "type": "mqtt in",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "topic": "status/ESP1",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "01257af953396932"
+            ]
+        ]
+    },
+    {
+        "id": "c0b96fa1cdbe1899",
+        "type": "ui_template",
+        "z": "2a13e96f16ed63a2",
+        "group": "9ee7ba2c3be6b411",
+        "name": "Meja 1",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 1</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3a32c4ade668ee23",
+        "type": "change",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5444513684d57964",
+        "type": "ui_switch",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "9ee7ba2c3be6b411",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "cae391e9b1d8cd63"
+            ]
+        ]
+    },
+    {
+        "id": "01257af953396932",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "3a32c4ade668ee23"
+            ]
+        ]
+    },
+    {
+        "id": "6e9b0bd193b79bd8",
+        "type": "inject",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP1.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "5444513684d57964"
+            ]
+        ]
+    },
+    {
+        "id": "cae391e9b1d8cd63",
+        "type": "mqtt out",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "topic": "command/ESP1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "0b9388c8b05e5041",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "685a48d68c7ad04a"
+            ]
+        ]
+    },
+    {
+        "id": "646a5963cc37efdc",
+        "type": "inject",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP1",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "0b9388c8b05e5041",
+                "291cc34d04e38dcf"
+            ]
+        ]
+    },
+    {
+        "id": "685a48d68c7ad04a",
+        "type": "ui_text",
+        "z": "2a13e96f16ed63a2",
+        "group": "9ee7ba2c3be6b411",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "c97aa7956bdb82eb",
+        "type": "ui_text_input",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "9ee7ba2c3be6b411",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "32c52dd4877b72ec"
+            ]
+        ]
+    },
+    {
+        "id": "79c7b571a9c75235",
+        "type": "ui_button",
+        "z": "2a13e96f16ed63a2",
+        "name": "Mulai/stop timer",
+        "group": "9ee7ba2c3be6b411",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer1",
+        "payloadType": "flow",
+        "topic": "ESP1",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "285773b6d03b49ec",
+                "ba2172bcd10a08f6"
+            ]
+        ]
+    },
+    {
+        "id": "5e592d5c4a509006",
+        "type": "ui_text",
+        "z": "2a13e96f16ed63a2",
+        "group": "9ee7ba2c3be6b411",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "285773b6d03b49ec",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer1_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nmsg.className = \"foobar\";\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "b4d747b4268c6fd1"
+            ]
+        ]
+    },
+    {
+        "id": "32c52dd4877b72ec",
+        "type": "change",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer1",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b4d747b4268c6fd1",
+        "type": "ui_toast",
+        "z": "2a13e96f16ed63a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "6e309aedd80bfeb4"
+            ]
+        ]
+    },
+    {
+        "id": "6e309aedd80bfeb4",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer1_on\")) {\n  flow.set(\"timer1_on\", false);\n} else {\n  msg.payload = flow.get(\"timer1\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer1_end\", Date.now() + msg.payload);\n  flow.set(\"timer1_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "2b1be61d37a7fcc9"
+            ]
+        ]
+    },
+    {
+        "id": "2b1be61d37a7fcc9",
+        "type": "mqtt out",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "topic": "timer/ESP1",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "d99ec459c25c71d1",
+        "type": "inject",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP1",
+        "payload": "timer1_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "79c7b571a9c75235"
+            ]
+        ]
+    },
+    {
+        "id": "291cc34d04e38dcf",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer1_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer1_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer1_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "5e592d5c4a509006"
+            ]
+        ]
+    },
+    {
+        "id": "ba2172bcd10a08f6",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "f721b010301f06d3"
+            ]
+        ]
+    },
+    {
+        "id": "f721b010301f06d3",
+        "type": "ui_toast",
+        "z": "2a13e96f16ed63a2",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "56e83907b90c7bdd",
+        "type": "mqtt in",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "topic": "status/ESP2",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "25febaf87de55f8e"
+            ]
+        ]
+    },
+    {
+        "id": "25b1de0548331250",
+        "type": "ui_template",
+        "z": "4eb749c45679c0b7",
+        "group": "865f2cc36e65432e",
+        "name": "Meja 2",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 2</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "551b984b61391f49",
+        "type": "change",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dc37a5697cdafb7b",
+        "type": "ui_switch",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "865f2cc36e65432e",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "e73ff16fcd5e1c14"
+            ]
+        ]
+    },
+    {
+        "id": "25febaf87de55f8e",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "551b984b61391f49"
+            ]
+        ]
+    },
+    {
+        "id": "a54bdb01c994bd1d",
+        "type": "inject",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP2.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "dc37a5697cdafb7b"
+            ]
+        ]
+    },
+    {
+        "id": "e73ff16fcd5e1c14",
+        "type": "mqtt out",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "topic": "command/ESP2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a990c207b16d6dbe",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "ed54a9d1b0372316"
+            ]
+        ]
+    },
+    {
+        "id": "1a526f8f13fb5233",
+        "type": "inject",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP2",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "a990c207b16d6dbe",
+                "3c6761028f2deb51"
+            ]
+        ]
+    },
+    {
+        "id": "ed54a9d1b0372316",
+        "type": "ui_text",
+        "z": "4eb749c45679c0b7",
+        "group": "865f2cc36e65432e",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "b2cacafef913b7c4",
+        "type": "ui_text_input",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "865f2cc36e65432e",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "ce2039b5ebda7d46"
+            ]
+        ]
+    },
+    {
+        "id": "98d0d34945e8f6d8",
+        "type": "ui_button",
+        "z": "4eb749c45679c0b7",
+        "name": "Mulai/stop timer",
+        "group": "865f2cc36e65432e",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer2",
+        "payloadType": "flow",
+        "topic": "ESP2",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "8373a008c31f0631",
+                "744788ed0bc54c86"
+            ]
+        ]
+    },
+    {
+        "id": "edc0321c6d48da97",
+        "type": "ui_text",
+        "z": "4eb749c45679c0b7",
+        "group": "865f2cc36e65432e",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "8373a008c31f0631",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer2_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "359dc9151502cb45"
+            ]
+        ]
+    },
+    {
+        "id": "ce2039b5ebda7d46",
+        "type": "change",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer2",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "359dc9151502cb45",
+        "type": "ui_toast",
+        "z": "4eb749c45679c0b7",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "2e2d67579afbfe32"
+            ]
+        ]
+    },
+    {
+        "id": "2e2d67579afbfe32",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer2_on\")) {\n  flow.set(\"timer2_on\", false);\n} else {\n  msg.payload = flow.get(\"timer2\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer2_end\", Date.now() + msg.payload);\n  flow.set(\"timer2_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "73b908886bae5275"
+            ]
+        ]
+    },
+    {
+        "id": "73b908886bae5275",
+        "type": "mqtt out",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "topic": "timer/ESP2",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "eb93cc111cc57018",
+        "type": "inject",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP2",
+        "payload": "timer2_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "98d0d34945e8f6d8"
+            ]
+        ]
+    },
+    {
+        "id": "3c6761028f2deb51",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer2_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer2_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer2_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "edc0321c6d48da97"
+            ]
+        ]
+    },
+    {
+        "id": "744788ed0bc54c86",
+        "type": "function",
+        "z": "4eb749c45679c0b7",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "2254c0bb0e683a56"
+            ]
+        ]
+    },
+    {
+        "id": "2254c0bb0e683a56",
+        "type": "ui_toast",
+        "z": "4eb749c45679c0b7",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "542478c2f2337123",
+        "type": "mqtt in",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "topic": "status/ESP3",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "ceb220d028381aa1"
+            ]
+        ]
+    },
+    {
+        "id": "af937edd7557d043",
+        "type": "ui_template",
+        "z": "4d2ba9cfebf0befb",
+        "group": "3eef1f70114061da",
+        "name": "Meja 3",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 3</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0f442a1fb1e0986a",
+        "type": "change",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2241d42cad3c53c8",
+        "type": "ui_switch",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "3eef1f70114061da",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "b32f8d6db82b494a"
+            ]
+        ]
+    },
+    {
+        "id": "ceb220d028381aa1",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "0f442a1fb1e0986a"
+            ]
+        ]
+    },
+    {
+        "id": "fbbd5154ee035e19",
+        "type": "inject",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP3.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "2241d42cad3c53c8"
+            ]
+        ]
+    },
+    {
+        "id": "b32f8d6db82b494a",
+        "type": "mqtt out",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "topic": "command/ESP3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "9d1a06f247dfd3fe",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "08e2c29b6517fb83"
+            ]
+        ]
+    },
+    {
+        "id": "01bddc20ed3d28a6",
+        "type": "inject",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP3",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "9d1a06f247dfd3fe",
+                "f2e99acc4d799e4d"
+            ]
+        ]
+    },
+    {
+        "id": "08e2c29b6517fb83",
+        "type": "ui_text",
+        "z": "4d2ba9cfebf0befb",
+        "group": "3eef1f70114061da",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "51cfbb9cbb376cb3",
+        "type": "ui_text_input",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "3eef1f70114061da",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "77124e610d528c73"
+            ]
+        ]
+    },
+    {
+        "id": "e22b5d0032032a51",
+        "type": "ui_button",
+        "z": "4d2ba9cfebf0befb",
+        "name": "Mulai/stop timer",
+        "group": "3eef1f70114061da",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer3",
+        "payloadType": "flow",
+        "topic": "ESP3",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "c2817778e9fa204a",
+                "e74f8ec4ac34b4f9"
+            ]
+        ]
+    },
+    {
+        "id": "01b175e0cd196577",
+        "type": "ui_text",
+        "z": "4d2ba9cfebf0befb",
+        "group": "3eef1f70114061da",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c2817778e9fa204a",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer3_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "dd6308d2383886e4"
+            ]
+        ]
+    },
+    {
+        "id": "77124e610d528c73",
+        "type": "change",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer3",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dd6308d2383886e4",
+        "type": "ui_toast",
+        "z": "4d2ba9cfebf0befb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "6fb594a08ac80186"
+            ]
+        ]
+    },
+    {
+        "id": "6fb594a08ac80186",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer3_on\")) {\n  flow.set(\"timer3_on\", false);\n} else {\n  msg.payload = flow.get(\"timer3\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer3_end\", Date.now() + msg.payload);\n  flow.set(\"timer3_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "f523e937b486bf3f"
+            ]
+        ]
+    },
+    {
+        "id": "f523e937b486bf3f",
+        "type": "mqtt out",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "topic": "timer/ESP3",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "7521d9281faeb510",
+        "type": "inject",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP3",
+        "payload": "timer3_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "e22b5d0032032a51"
+            ]
+        ]
+    },
+    {
+        "id": "f2e99acc4d799e4d",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer3_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer3_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer3_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "01b175e0cd196577"
+            ]
+        ]
+    },
+    {
+        "id": "e74f8ec4ac34b4f9",
+        "type": "function",
+        "z": "4d2ba9cfebf0befb",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "5850c88483686b44"
+            ]
+        ]
+    },
+    {
+        "id": "5850c88483686b44",
+        "type": "ui_toast",
+        "z": "4d2ba9cfebf0befb",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a9e3729c7bd63b50",
+        "type": "mqtt in",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "topic": "status/ESP4",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "489130a6d050badf"
+            ]
+        ]
+    },
+    {
+        "id": "a7d60112ed41df9c",
+        "type": "ui_template",
+        "z": "56e0a59eadada2e6",
+        "group": "baf538a66c94f5f8",
+        "name": "Meja 4",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 4</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "dfe5de302883000c",
+        "type": "change",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP4",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8f4bdb73d436785b",
+        "type": "ui_switch",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "baf538a66c94f5f8",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "fe96e494befc575f"
+            ]
+        ]
+    },
+    {
+        "id": "489130a6d050badf",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "dfe5de302883000c"
+            ]
+        ]
+    },
+    {
+        "id": "d32eafdfa400874b",
+        "type": "inject",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP4.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "8f4bdb73d436785b"
+            ]
+        ]
+    },
+    {
+        "id": "fe96e494befc575f",
+        "type": "mqtt out",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "topic": "command/ESP4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "cbf19202a85651b1",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "ac818206aeb2dd84"
+            ]
+        ]
+    },
+    {
+        "id": "7c882d75d076733b",
+        "type": "inject",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP4",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "cbf19202a85651b1",
+                "18bf58d819b19563"
+            ]
+        ]
+    },
+    {
+        "id": "ac818206aeb2dd84",
+        "type": "ui_text",
+        "z": "56e0a59eadada2e6",
+        "group": "baf538a66c94f5f8",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "005e5bf2c44f9e82",
+        "type": "ui_text_input",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "baf538a66c94f5f8",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "655b5e91c245c783"
+            ]
+        ]
+    },
+    {
+        "id": "b7f85d07a41f251e",
+        "type": "ui_button",
+        "z": "56e0a59eadada2e6",
+        "name": "Mulai/stop timer",
+        "group": "baf538a66c94f5f8",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer4",
+        "payloadType": "flow",
+        "topic": "ESP4",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "65b9230f9506998c",
+                "50e72801024dc108"
+            ]
+        ]
+    },
+    {
+        "id": "e159d18df9bcdc30",
+        "type": "ui_text",
+        "z": "56e0a59eadada2e6",
+        "group": "baf538a66c94f5f8",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "65b9230f9506998c",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer4_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "960658466151b74f"
+            ]
+        ]
+    },
+    {
+        "id": "655b5e91c245c783",
+        "type": "change",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer4",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "960658466151b74f",
+        "type": "ui_toast",
+        "z": "56e0a59eadada2e6",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "349d79d59fd87ad0"
+            ]
+        ]
+    },
+    {
+        "id": "349d79d59fd87ad0",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer4_on\")) {\n  flow.set(\"timer4_on\", false);\n} else {\n  msg.payload = flow.get(\"timer4\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer4_end\", Date.now() + msg.payload);\n  flow.set(\"timer4_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "1ff5e96e10da5e86"
+            ]
+        ]
+    },
+    {
+        "id": "1ff5e96e10da5e86",
+        "type": "mqtt out",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "topic": "timer/ESP4",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "ef0a9c9f9dd0ed7d",
+        "type": "inject",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP4",
+        "payload": "timer4_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "b7f85d07a41f251e"
+            ]
+        ]
+    },
+    {
+        "id": "18bf58d819b19563",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer4_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer4_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer4_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "e159d18df9bcdc30"
+            ]
+        ]
+    },
+    {
+        "id": "50e72801024dc108",
+        "type": "function",
+        "z": "56e0a59eadada2e6",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "78a3099d13f801d7"
+            ]
+        ]
+    },
+    {
+        "id": "78a3099d13f801d7",
+        "type": "ui_toast",
+        "z": "56e0a59eadada2e6",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "89c8f75ce8ef6d40",
+        "type": "mqtt in",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "topic": "status/ESP5",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "7ae29ce125b0f6d3"
+            ]
+        ]
+    },
+    {
+        "id": "9ee4379234b8353a",
+        "type": "ui_template",
+        "z": "a84547477b2c265e",
+        "group": "6595dc7bdf5248a2",
+        "name": "Meja 5",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 5</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "87053aab3cf11582",
+        "type": "change",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP5",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2de0fc7f3f77791a",
+        "type": "ui_switch",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "6595dc7bdf5248a2",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "f825fd34b13ea524"
+            ]
+        ]
+    },
+    {
+        "id": "7ae29ce125b0f6d3",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "87053aab3cf11582"
+            ]
+        ]
+    },
+    {
+        "id": "3d8e28948fe532b2",
+        "type": "inject",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP5.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "2de0fc7f3f77791a"
+            ]
+        ]
+    },
+    {
+        "id": "f825fd34b13ea524",
+        "type": "mqtt out",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "topic": "command/ESP5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "998457b8a49c178c",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "e584b0226edf58db"
+            ]
+        ]
+    },
+    {
+        "id": "dc526e677c50a1b7",
+        "type": "inject",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP5",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "998457b8a49c178c",
+                "9b206e1e0e6aadba"
+            ]
+        ]
+    },
+    {
+        "id": "e584b0226edf58db",
+        "type": "ui_text",
+        "z": "a84547477b2c265e",
+        "group": "6595dc7bdf5248a2",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "32fa1fedfa476b1e",
+        "type": "ui_text_input",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "6595dc7bdf5248a2",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "2a87598d97143ed4"
+            ]
+        ]
+    },
+    {
+        "id": "b0a46105222ec8d6",
+        "type": "ui_button",
+        "z": "a84547477b2c265e",
+        "name": "Mulai/stop timer",
+        "group": "6595dc7bdf5248a2",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer5",
+        "payloadType": "flow",
+        "topic": "ESP5",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "b0491df8872a06f1",
+                "a5ac1fa85fd3a8a9"
+            ]
+        ]
+    },
+    {
+        "id": "444408ec2d8bc62d",
+        "type": "ui_text",
+        "z": "a84547477b2c265e",
+        "group": "6595dc7bdf5248a2",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b0491df8872a06f1",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer5_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "8c54a8c64294d83c"
+            ]
+        ]
+    },
+    {
+        "id": "2a87598d97143ed4",
+        "type": "change",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer5",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8c54a8c64294d83c",
+        "type": "ui_toast",
+        "z": "a84547477b2c265e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "81a14fb120c5bc55"
+            ]
+        ]
+    },
+    {
+        "id": "81a14fb120c5bc55",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer5_on\")) {\n  flow.set(\"timer5_on\", false);\n} else {\n  msg.payload = flow.get(\"timer5\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer5_end\", Date.now() + msg.payload);\n  flow.set(\"timer5_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "437d3c43d8485a1a"
+            ]
+        ]
+    },
+    {
+        "id": "437d3c43d8485a1a",
+        "type": "mqtt out",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "topic": "timer/ESP5",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "b7eb219788ed94d6",
+        "type": "inject",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP5",
+        "payload": "timer5_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "b0a46105222ec8d6"
+            ]
+        ]
+    },
+    {
+        "id": "9b206e1e0e6aadba",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer5_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer5_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer5_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "444408ec2d8bc62d"
+            ]
+        ]
+    },
+    {
+        "id": "a5ac1fa85fd3a8a9",
+        "type": "function",
+        "z": "a84547477b2c265e",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "653eee02a115f059"
+            ]
+        ]
+    },
+    {
+        "id": "653eee02a115f059",
+        "type": "ui_toast",
+        "z": "a84547477b2c265e",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6868b3646f2ffeb0",
+        "type": "mqtt in",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "topic": "status/ESP6",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "495283e9015a3d64"
+            ]
+        ]
+    },
+    {
+        "id": "60a8420bcb1cb180",
+        "type": "ui_template",
+        "z": "6262f3ed24d5192a",
+        "group": "4fa488d32a7d45c2",
+        "name": "Meja 6",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 6</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a1a8a6448bb8438f",
+        "type": "change",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP6",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f53f4e46fcd14cea",
+        "type": "ui_switch",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "4fa488d32a7d45c2",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "bb351d57e369fa1e"
+            ]
+        ]
+    },
+    {
+        "id": "495283e9015a3d64",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "a1a8a6448bb8438f"
+            ]
+        ]
+    },
+    {
+        "id": "25c2e4591d28fbd1",
+        "type": "inject",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP6.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "f53f4e46fcd14cea"
+            ]
+        ]
+    },
+    {
+        "id": "bb351d57e369fa1e",
+        "type": "mqtt out",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "topic": "command/ESP6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "8afbe09f537b5525",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "d8370f78a5a80e65"
+            ]
+        ]
+    },
+    {
+        "id": "0f0be56ebdda92ee",
+        "type": "inject",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP6",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "8afbe09f537b5525",
+                "9f4d1a60c13f5ce5"
+            ]
+        ]
+    },
+    {
+        "id": "d8370f78a5a80e65",
+        "type": "ui_text",
+        "z": "6262f3ed24d5192a",
+        "group": "4fa488d32a7d45c2",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "2d6e6448e9d608c9",
+        "type": "ui_text_input",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "4fa488d32a7d45c2",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "fd2e71bd705c3f69"
+            ]
+        ]
+    },
+    {
+        "id": "320c4e069df84a28",
+        "type": "ui_button",
+        "z": "6262f3ed24d5192a",
+        "name": "Mulai/stop timer",
+        "group": "4fa488d32a7d45c2",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer6",
+        "payloadType": "flow",
+        "topic": "ESP6",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "5532b568a34bb309",
+                "3830eb61d530e10f"
+            ]
+        ]
+    },
+    {
+        "id": "c657d928886a422e",
+        "type": "ui_text",
+        "z": "6262f3ed24d5192a",
+        "group": "4fa488d32a7d45c2",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "5532b568a34bb309",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer6_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "f77edac213ea7e73"
+            ]
+        ]
+    },
+    {
+        "id": "fd2e71bd705c3f69",
+        "type": "change",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer6",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f77edac213ea7e73",
+        "type": "ui_toast",
+        "z": "6262f3ed24d5192a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "84369196b15b80a7"
+            ]
+        ]
+    },
+    {
+        "id": "84369196b15b80a7",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer6_on\")) {\n  flow.set(\"timer6_on\", false);\n} else {\n  msg.payload = flow.get(\"timer6\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer6_end\", Date.now() + msg.payload);\n  flow.set(\"timer6_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "f57dcf35fe270db5"
+            ]
+        ]
+    },
+    {
+        "id": "f57dcf35fe270db5",
+        "type": "mqtt out",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "topic": "timer/ESP6",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "17764bf671c39640",
+        "type": "inject",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP6",
+        "payload": "timer6_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "320c4e069df84a28"
+            ]
+        ]
+    },
+    {
+        "id": "9f4d1a60c13f5ce5",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer6_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer6_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer6_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "c657d928886a422e"
+            ]
+        ]
+    },
+    {
+        "id": "3830eb61d530e10f",
+        "type": "function",
+        "z": "6262f3ed24d5192a",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "dcc792b774175c28"
+            ]
+        ]
+    },
+    {
+        "id": "dcc792b774175c28",
+        "type": "ui_toast",
+        "z": "6262f3ed24d5192a",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0677549b8321cc2d",
+        "type": "mqtt in",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "topic": "status/ESP7",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "a5e96b84f284d922"
+            ]
+        ]
+    },
+    {
+        "id": "9485f7226f1e9a04",
+        "type": "ui_template",
+        "z": "5d79734d69042be4",
+        "group": "616f523aba464b55",
+        "name": "Meja 7",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 7</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "b7f82be1c797aca1",
+        "type": "change",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP7",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2de0a893e7e37dfa",
+        "type": "ui_switch",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "616f523aba464b55",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "1a050c0d9da2cbcd"
+            ]
+        ]
+    },
+    {
+        "id": "a5e96b84f284d922",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "b7f82be1c797aca1"
+            ]
+        ]
+    },
+    {
+        "id": "dcfab7338daf1aef",
+        "type": "inject",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP7.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "2de0a893e7e37dfa"
+            ]
+        ]
+    },
+    {
+        "id": "1a050c0d9da2cbcd",
+        "type": "mqtt out",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "topic": "command/ESP7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "1789376134094fd2",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "7228432d4b38b9b3"
+            ]
+        ]
+    },
+    {
+        "id": "4d925082aefa2628",
+        "type": "inject",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP7",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "1789376134094fd2",
+                "88ece4ca3942102c"
+            ]
+        ]
+    },
+    {
+        "id": "7228432d4b38b9b3",
+        "type": "ui_text",
+        "z": "5d79734d69042be4",
+        "group": "616f523aba464b55",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "1757f07f5cbecbf7",
+        "type": "ui_text_input",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "616f523aba464b55",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "397144e5cbd4fb92"
+            ]
+        ]
+    },
+    {
+        "id": "d780a0cc482f3408",
+        "type": "ui_button",
+        "z": "5d79734d69042be4",
+        "name": "Mulai/stop timer",
+        "group": "616f523aba464b55",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer7",
+        "payloadType": "flow",
+        "topic": "ESP7",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "b6d61a5719b4fc8b",
+                "8ef126c232ecfd72"
+            ]
+        ]
+    },
+    {
+        "id": "c344079dccb35416",
+        "type": "ui_text",
+        "z": "5d79734d69042be4",
+        "group": "616f523aba464b55",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "b6d61a5719b4fc8b",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer7_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "7a30b267ec4af545"
+            ]
+        ]
+    },
+    {
+        "id": "397144e5cbd4fb92",
+        "type": "change",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer7",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7a30b267ec4af545",
+        "type": "ui_toast",
+        "z": "5d79734d69042be4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "03e89125f2d445ec"
+            ]
+        ]
+    },
+    {
+        "id": "03e89125f2d445ec",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer7_on\")) {\n  flow.set(\"timer7_on\", false);\n} else {\n  msg.payload = flow.get(\"timer7\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer7_end\", Date.now() + msg.payload);\n  flow.set(\"timer7_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "1b9d539b8c219ee9"
+            ]
+        ]
+    },
+    {
+        "id": "1b9d539b8c219ee9",
+        "type": "mqtt out",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "topic": "timer/ESP7",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "c9953ed3d64c86d5",
+        "type": "inject",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP7",
+        "payload": "timer7_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "d780a0cc482f3408"
+            ]
+        ]
+    },
+    {
+        "id": "88ece4ca3942102c",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer7_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer7_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer7_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "c344079dccb35416"
+            ]
+        ]
+    },
+    {
+        "id": "8ef126c232ecfd72",
+        "type": "function",
+        "z": "5d79734d69042be4",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "d0bc2072e264ec51"
+            ]
+        ]
+    },
+    {
+        "id": "d0bc2072e264ec51",
+        "type": "ui_toast",
+        "z": "5d79734d69042be4",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "af05e533c506cbf8",
+        "type": "mqtt in",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "topic": "status/ESP8",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 110,
+        "y": 80,
+        "wires": [
+            [
+                "cbec998309cf5dab"
+            ]
+        ]
+    },
+    {
+        "id": "c2fa54d2389ddf7f",
+        "type": "ui_template",
+        "z": "f7493c698b60bc56",
+        "group": "b633c248c6fc2dad",
+        "name": "Meja 8",
+        "order": 1,
+        "width": "3",
+        "height": "1",
+        "format": "<div>\n  <h2>Meja 8</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 90,
+        "y": 40,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e179fa09c68346e6",
+        "type": "change",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "ESP8",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 500,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "c3353d92a85aca26",
+        "type": "ui_switch",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "label": "Contactor",
+        "tooltip": "",
+        "group": "b633c248c6fc2dad",
+        "order": 3,
+        "width": "3",
+        "height": "1",
+        "passthru": false,
+        "decouple": "true",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": true,
+        "className": "",
+        "x": 320,
+        "y": 140,
+        "wires": [
+            [
+                "a3876294d8674ed7"
+            ]
+        ]
+    },
+    {
+        "id": "cbec998309cf5dab",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "msg.payload = {\n    \"Relay1\": msg.payload === \"true\",\n    \"last\": Date.now()\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 80,
+        "wires": [
+            [
+                "e179fa09c68346e6"
+            ]
+        ]
+    },
+    {
+        "id": "dbfc2811f841fbad",
+        "type": "inject",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "ESP8.Relay1",
+        "payloadType": "flow",
+        "x": 130,
+        "y": 140,
+        "wires": [
+            [
+                "c3353d92a85aca26"
+            ]
+        ]
+    },
+    {
+        "id": "a3876294d8674ed7",
+        "type": "mqtt out",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "topic": "command/ESP8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 500,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "6a7392892fd8ca7a",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "let lastTime = flow.get(msg.topic)?.last || 0;\n\nif (msg.payload - lastTime > 5000) {\n  flow.set(msg.topic + \"status\", false);\n  msg.payload = \"MATI\";\n} else {\n  flow.set(msg.topic + \"status\", true);\n  msg.payload = \"AKTIF\";\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 200,
+        "wires": [
+            [
+                "0183929d0f02ca6d"
+            ]
+        ]
+    },
+    {
+        "id": "6863d3a481549932",
+        "type": "inject",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "ESP8",
+        "payloadType": "date",
+        "x": 130,
+        "y": 200,
+        "wires": [
+            [
+                "6a7392892fd8ca7a",
+                "691ba22842042dfe"
+            ]
+        ]
+    },
+    {
+        "id": "0183929d0f02ca6d",
+        "type": "ui_text",
+        "z": "f7493c698b60bc56",
+        "group": "b633c248c6fc2dad",
+        "order": 5,
+        "width": 3,
+        "height": 1,
+        "name": "",
+        "label": "Status ESP: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 490,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "4a5167705ec8d53e",
+        "type": "ui_text_input",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "label": "Matikan setelah:",
+        "tooltip": "",
+        "group": "b633c248c6fc2dad",
+        "order": 8,
+        "width": "4",
+        "height": 1,
+        "passthru": false,
+        "mode": "time",
+        "delay": "0",
+        "topic": "topic",
+        "sendOnBlur": true,
+        "className": "",
+        "topicType": "msg",
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "9f491fc0c4d8e9ef"
+            ]
+        ]
+    },
+    {
+        "id": "0dd9dddfcd26a9f2",
+        "type": "ui_button",
+        "z": "f7493c698b60bc56",
+        "name": "Mulai/stop timer",
+        "group": "b633c248c6fc2dad",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "{{payload ? 'Stop timer':'Mulai timer'}}",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'red':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "timer8",
+        "payloadType": "flow",
+        "topic": "ESP8",
+        "topicType": "str",
+        "x": 120,
+        "y": 380,
+        "wires": [
+            [
+                "cb87dee6eab8cce1",
+                "a308cbfbb41c7af9"
+            ]
+        ]
+    },
+    {
+        "id": "b6a4357511273c1c",
+        "type": "ui_text",
+        "z": "f7493c698b60bc56",
+        "group": "b633c248c6fc2dad",
+        "order": 6,
+        "width": "3",
+        "height": 1,
+        "name": "",
+        "label": "Timer: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 470,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "cb87dee6eab8cce1",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "if (!msg.payload || !flow.get(msg.topic + \"status\")) return;\n\nif (flow.get(\"timer8_on\")) {\n  msg.payload = \"Matikan timer?\";\n} else {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60*hh;\n\n  msg.payload = msg.payload - (Date.now() + 7*3600*1000) % 86400000;\n  if (msg.payload < 0) {\n    msg.payload = \"Waktu telah terlewat. Matikan sekarang?\";\n  } else {\n    msg.payload = `Switch akan mati otomatis setelah pukul ${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}, lanjutkan?`;\n  }\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 360,
+        "wires": [
+            [
+                "8e44b2ed915972a9"
+            ]
+        ]
+    },
+    {
+        "id": "9f491fc0c4d8e9ef",
+        "type": "change",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer8",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 520,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8e44b2ed915972a9",
+        "type": "ui_toast",
+        "z": "f7493c698b60bc56",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 360,
+        "wires": [
+            [
+                "8ab5291a3c942574"
+            ]
+        ]
+    },
+    {
+        "id": "8ab5291a3c942574",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nif (flow.get(\"timer8_on\")) {\n  flow.set(\"timer8_on\", false);\n} else {\n  msg.payload = flow.get(\"timer8\");\n  msg.payload = msg.payload - ((Date.now() + 7*3600*1000) % 86400000);\n  if (msg.payload < 0) return;\n  flow.set(\"timer8_end\", Date.now() + msg.payload);\n  flow.set(\"timer8_on\", true);\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 360,
+        "wires": [
+            [
+                "cec2e9370ee32279"
+            ]
+        ]
+    },
+    {
+        "id": "cec2e9370ee32279",
+        "type": "mqtt out",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "topic": "timer/ESP8",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "11a721f2d0f44163",
+        "type": "inject",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "0.1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "ESP8",
+        "payload": "timer8_on",
+        "payloadType": "flow",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "0dd9dddfcd26a9f2"
+            ]
+        ]
+    },
+    {
+        "id": "691ba22842042dfe",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer8_end\") || 0) - msg.payload;\nif (msg.payload <= 0 || !flow.get(\"timer8_on\") || !flow.get(msg.topic + \"status\")) {\n  msg.payload = \"MATI\";\n  flow.set(\"timer8_on\", false);\n}\nelse {\n  let hh = Math.floor(msg.payload/3600000);\n  let mm = Math.floor(msg.payload/60000) - 60 * hh;\n  let ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\n  msg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\n}\nmsg.className = msg.payload == 'MATI' ? 'status-mati' : 'status-aktif';\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 240,
+        "wires": [
+            [
+                "b6a4357511273c1c"
+            ]
+        ]
+    },
+    {
+        "id": "a308cbfbb41c7af9",
+        "type": "function",
+        "z": "f7493c698b60bc56",
+        "name": "",
+        "func": "if (!flow.get(msg.topic + \"status\")) {\n  msg.payload = \"ESP tidak aktif\";\n} else if (!msg.payload) {\n  msg.payload = \"Waktu untuk timer belum diset.\";\n} else {\n  return;\n}\nmsg.topic = \"TIMER Meja \" + msg.topic[msg.topic.length - 1];\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 400,
+        "wires": [
+            [
+                "be22b933ff309f3c"
+            ]
+        ]
+    },
+    {
+        "id": "be22b933ff309f3c",
+        "type": "ui_toast",
+        "z": "f7493c698b60bc56",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "foobar",
+        "topic": "",
+        "name": "",
+        "x": 450,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3872615dacb28e7a",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "group": "fc95b4bc0b9795a3",
+        "name": "<head>",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n  .md-button.md-default-theme.md-primary, .md-button.md-primary {\n    color: white;\n  }\n  * {\n    box-sizing: border-box;\n  }\n  \n  .text-center{\n      text-align: center;\n  }\n\n  .column {\n    float: left;\n    width: 33.33%;\n    padding: 10px;\n    height: 120px;\n    margin: 0;\n  }\n  \n   .right {\n        width: 100% !important;\n        display: flex !important;\n        align-items: flex-end !important;\n        padding-right: 40px;\n        justify-content: flex-end !important;\n    }\n  \n  .nr-dashboard-template h2, .nr-dashboard-template h3, .nr-dashboard-template h4 {\n    color: #111111 !important;\n     background-color: transparent !important; \n  }\n  \n  .nr-dashboard-template {\n      overflow: visible !important;\n  }\n  \n  /*.nr-dashboard-button .md-button {\n      width: 30% !important;\n  }*/\n\n  .column-2 {\n    float: left;\n    width: 50%;\n    padding: 20px;\n  }\n\n  .column-table {\n    float: left;\n    width: 33.33%;\n    padding: 10px;\n    height: 120px;\n  }\n\n  .row:after {\n    content: \"\";\n    display: table;\n  }\n\n  .button-reset {\n    background-color: #ee0d0d;\n    border-radius: 12px;\n    position: static;\n    padding: 10px 20px;\n    border: 1px solid #fff;\n  }\n\n  .button-on {\n    background-color: #05f140;\n    border-radius: 10px;\n    position: static;\n    padding: 10px 20px;\n    border: 1px solid #fff;\n  }\n\n  .button-off {\n    background-color: #cccccc;\n    border-radius: 10px;\n    position: static;\n    padding: 10px 20px;\n    border: 1px solid #fff;\n  }\n\n  .bg-gradient-top {\n    margin: 0;\n    padding: 40px;\n    background: rgb(255, 255, 255);\n    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 8%, rgba(38, 163, 255, 1) 93%);\n  }\n\n  .dropbtn {\n    color: black;\n    padding: 8px 24px;\n    font-size: 14px;\n    border-radius: 10px;\n    border: 2px solid #A0B9C6;\n  }\n\n  .dropdown {\n    position: relative;\n    display: inline-block;\n    padding-left: 40px;\n    padding-right: 40px;\n  }\n\n  .dropdown-content {\n    display: none;\n    position: absolute;\n    background-color: #f1f1f1;\n    min-width: 160px;\n    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);\n    z-index: 1;\n  }\n\n  .dropdown-content a {\n    color: black;\n    padding: 8px;\n    text-decoration: none;\n    display: block;\n  }\n\n  .dropdown-content a:hover {\n    background-color: #ddd;\n  }\n\n  .dropdown:hover .dropdown-content {\n    display: block;\n  }\n\n  .dropdown:hover .dropbtn {\n    background-color: #ddd;\n  }\n  \n  \n  .meja {\n  \tbox-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;\n  \tborder: 1px solid grey;\n    padding: 0px;\n  }\n\n  .countdown {\n    font-size: 40px;\n  }\n  \n  .md-cancel-button {\n    background-color: red !important;\n  }\n  .md-confirm-button {\n    background-color: #20c200 !important;\n  }\n  .status-mati .value {\n    color: red;\n  }\n  .status-aktif .value {\n    color: #20c200;\n  }\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 100,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "96145f6510ae5c68",
+        "type": "comment",
+        "z": "45818cf04cbf91f2",
+        "name": "Dashboard",
+        "info": "",
+        "x": 100,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "728cc2ef7491fe48",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "d": true,
+        "group": "e7dbed7335441500",
+        "name": "<body>",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div class=\"row\">\n  <div class=\"column\" style=\"text-align:center;\">\n    <div style=\"padding: 10px;\">\n      <img src=\"https://github.com/taqiyyuddinhammamafiify/SmartSwitch/blob/main/FrontEnd/cropped-Simbol-Logo-Garis.png?raw=true\" loading=\"lazy\" width=\"80\" height=\"80\">\n    </div>\n  </div>\n  <div class=\"column\" style=\"text-align:center; padding-top:30px;\">\n    <h1>Meja Lab. Schneider</h1>\n  </div>\n  <div class=\"column\"></div>\n</div>\n",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 100,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f1557e97f7bc37c7",
+        "type": "aedes broker",
+        "z": "45818cf04cbf91f2",
+        "d": true,
+        "name": "",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 390,
+        "y": 60,
+        "wires": [
+            [
+                "c93d7b7709b2fde5"
+            ],
+            [
+                "dd785beb045d902d"
+            ]
+        ]
+    },
+    {
+        "id": "c93d7b7709b2fde5",
+        "type": "debug",
+        "z": "45818cf04cbf91f2",
+        "name": "event",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 40,
+        "wires": []
+    },
+    {
+        "id": "dd785beb045d902d",
+        "type": "debug",
+        "z": "45818cf04cbf91f2",
+        "name": "publish",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 580,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b182bdf20d0ac4b8",
+        "type": "ui_dropdown",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "place": "Pilih Waktu",
+        "group": "f30158f0a83e28ed",
+        "order": 2,
+        "width": "4",
+        "height": 1,
+        "passthru": true,
+        "multiple": false,
+        "options": [
+            {
+                "label": "150 Menit",
+                "value": 150,
+                "type": "num"
+            },
+            {
+                "label": "120 Menit",
+                "value": 120,
+                "type": "num"
+            },
+            {
+                "label": "90 Menit",
+                "value": 90,
+                "type": "num"
+            },
+            {
+                "label": "60 Menit",
+                "value": 60,
+                "type": "num"
+            }
+        ],
+        "payload": "",
+        "topic": "TIMER",
+        "topicType": "str",
+        "className": "dropdown",
+        "x": 120,
+        "y": 440,
+        "wires": [
+            [
+                "4f12f39570287c4c"
+            ]
+        ]
+    },
+    {
+        "id": "1d8473052a950164",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "group": "f30158f0a83e28ed",
+        "name": "Timer Meja",
+        "order": 1,
+        "width": "6",
+        "height": 1,
+        "format": "<div style=\"padding-left:40px;padding-right:40px;\">\n    <h2>Timer Meja</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 130,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f12f39570287c4c",
+        "type": "change",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "timer",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 290,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "971b8e91f665298c",
+        "type": "mqtt out",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "TIMER",
+        "topic": "TIMER",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 740,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "e5cf3baa48c6e07d",
+        "type": "ui_button",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "group": "f30158f0a83e28ed",
+        "order": 3,
+        "width": 2,
+        "height": 1,
+        "passthru": false,
+        "label": "Mulai Timer",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "#20c200",
+        "className": "",
+        "icon": "",
+        "payload": "timer",
+        "payloadType": "flow",
+        "topic": "",
+        "topicType": "str",
+        "x": 130,
+        "y": 480,
+        "wires": [
+            [
+                "19f3de6eb8e2f3bc"
+            ]
+        ]
+    },
+    {
+        "id": "7d99d11743edb854",
+        "type": "ui_text",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "group": "07a705f852a1b869",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "countdown",
+        "x": 450,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "64bd05fac5902663",
+        "type": "ui_ui_control",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "events": "all",
+        "x": 380,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb90d19ecc8eddee",
+        "type": "inject",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "0.1",
+        "topic": "",
+        "payload": "show_countdown",
+        "payloadType": "flow",
+        "x": 170,
+        "y": 600,
+        "wires": [
+            [
+                "64bd05fac5902663"
+            ]
+        ]
+    },
+    {
+        "id": "fb5e7a7b603bbc33",
+        "type": "function",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "func": "msg.payload = (flow.get(\"timer_end\") || 0) - msg.payload;\nif (msg.payload <= 0) {\n  flow.set(\"show_countdown\", {\n    \"group\": {\n      \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n      \"show\": [\"Smart_Contactor_Group_13\"]\n    }\n  });\n  msg.payload = 0;\n}\nlet hh = Math.floor(msg.payload/3600000);\nlet mm = Math.floor(msg.payload/60000) - 60 * hh;\nlet ss = Math.floor(msg.payload/1000) - 60 * mm - 3600 * hh;\nmsg.payload = `${hh < 10 ? '0'+hh : hh}:${mm < 10 ? '0'+mm : mm}:${ss < 10 ? '0'+ss : ss}`;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\n// whenever the node is started.\nflow.set(\"show_countdown\", {\n  \"group\": {\n    \"hide\": [\"Smart_Contactor_Timer_Countdown\"],\n    \"show\": []\n  }\n});",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 640,
+        "wires": [
+            [
+                "7d99d11743edb854"
+            ]
+        ]
+    },
+    {
+        "id": "8050f054ba11c70c",
+        "type": "inject",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 640,
+        "wires": [
+            [
+                "fb5e7a7b603bbc33"
+            ]
+        ]
+    },
+    {
+        "id": "decdec2513af1329",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "group": "07a705f852a1b869",
+        "name": "Timer Countdown",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n    <h3>Mati otomatis dalam:</h3>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 150,
+        "y": 560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8d726c926232252a",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "group": "e7dbed7335441500",
+        "name": "Pengaturan Meja",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "format": "<div style=\"padding-bottom: 0px\">\n    <h1>Pengaturan Meja</h1>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "text-center",
+        "x": 130,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a39e49a771b201f6",
+        "type": "function",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "func": "if (msg.payload === \"Batal\") {\n  return;\n}\nmsg.payload = flow.get(\"timer\");\nflow.set(\"timer_end\", Date.now() + flow.get(\"timer\") * 60 * 1000);\nflow.set(\"show_countdown\", {\n    \"group\": {\n        \"hide\": [\"Smart_Contactor_Group_13\"],\n        \"show\": [\"Smart_Contactor_Timer_Countdown\"]\n    }\n});\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 480,
+        "wires": [
+            [
+                "971b8e91f665298c"
+            ]
+        ]
+    },
+    {
+        "id": "7a5202e5513e866a",
+        "type": "ui_toast",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "position": "dialog",
+        "displayTime": "3",
+        "highlight": "",
+        "sendall": false,
+        "outputs": 1,
+        "ok": "OK",
+        "cancel": "Batal",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 430,
+        "y": 480,
+        "wires": [
+            [
+                "a39e49a771b201f6"
+            ]
+        ]
+    },
+    {
+        "id": "19f3de6eb8e2f3bc",
+        "type": "function",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "name": "",
+        "func": "if (msg.payload == undefined) return;\nmsg.payload = `Timer ${msg.payload} menit akan dimulai. Lanjutkan?`\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 280,
+        "y": 480,
+        "wires": [
+            [
+                "7a5202e5513e866a"
+            ]
+        ]
+    },
+    {
+        "id": "55e847735e52ded0",
+        "type": "subflow:2a13e96f16ed63a2",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP1",
+        "env": [
+            {
+                "name": "ree",
+                "value": "3456",
+                "type": "num"
+            }
+        ],
+        "x": 90,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "f8a120c613df06a9",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "g": "6b4132203df3306d",
+        "group": "391cce082a7b7a1f",
+        "name": "",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "format": "<div>\n  <h2>foo</h2>\n  <h2>bar</h2>\n</div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 610,
+        "y": 640,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de88210f86796e01",
+        "type": "subflow:4eb749c45679c0b7",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP2",
+        "env": [],
+        "x": 230,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "09bc0018ba0bbac0",
+        "type": "subflow:4d2ba9cfebf0befb",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP3",
+        "env": [],
+        "x": 370,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "c11ac5f2b9f6ded5",
+        "type": "subflow:56e0a59eadada2e6",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP4",
+        "env": [],
+        "x": 510,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "99b1fb8f28948f49",
+        "type": "subflow:a84547477b2c265e",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP5",
+        "env": [],
+        "x": 90,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "2b1c0e7f49c2743c",
+        "type": "subflow:6262f3ed24d5192a",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP6",
+        "env": [],
+        "x": 230,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "82d3b6f15a7e6144",
+        "type": "subflow:5d79734d69042be4",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP7",
+        "env": [],
+        "x": 370,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7db6c9bdc5d20235",
+        "type": "subflow:f7493c698b60bc56",
+        "z": "45818cf04cbf91f2",
+        "name": "ESP8",
+        "env": [],
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "bce3d58cf20c03fe",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "d": true,
+        "group": "464e97acc22bf0dc",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 240,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "fc116699bb6080de",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "d": true,
+        "group": "c0f1ffbd16bd257b",
+        "name": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<div></div>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 660,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3050fc0fc8f5b939",
+        "type": "ui_template",
+        "z": "45818cf04cbf91f2",
+        "group": "fc95b4bc0b9795a3",
+        "name": "CSS remove !important",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n@media (max-width: 959px) {\n  .md-sidenav-left,\n  md-sidenav {\n    top: 48px ;\n    z-index: 99;\n  }\n}\n@media (max-width: 959px) and (min-width: 0) and (orientation: portrait) {\n  md-toolbar {\n    min-height: 48px;\n    height: 48px;\n    max-height: 48px;\n  }\n}\n@media (min-width: 960px) {\n  .md-sidenav-left,\n  md-sidenav {\n    top: 64px;\n    z-index: 99;\n  }\n}\n@media (max-width: 660px) {\n  md-sidenav,\n  md-sidenav.md-locked-open,\n  md-sidenav.md-closed.md-locked-open-add-active {\n    min-width: 64px ;\n    width: auto;\n    max-width: 200px ;\n  }\n}\n@media (min-width: 661px) {\n  md-sidenav,\n  md-sidenav.md-locked-open,\n  md-sidenav.md-closed.md-locked-open-add-active {\n    min-width: 64px ;\n    width: auto;\n    max-width: 320px ;\n  }\n}\nmd-sidenav ng-md-icon {\n  padding-right: 4px;\n}\nmd-sidenav i {\n  padding-right: 4px;\n}\nmd-sidenav md-list-item .md-list-item-inner > p {\n  line-height: 20px;\n}\nmd-card > md-list > md-list-item > div > md-icon > ui-icon > ng-md-icon {\n  vertical-align: unset ;\n}\nmd-toast .md-toast-content {\n  height: auto;\n}\nmd-toast .md-toast-error {\n  color: rgba(255, 64, 41, 0.84);\n  font-weight: 500;\n  font-size: large;\n}\nmd-backdrop.md-sidenav-backdrop {\n  z-index: 80;\n}\nmd-card {\n  box-shadow: none;\n}\n.md-button {\n  min-width: 64px;\n}\n.md-tooltip {\n  background-color: #888 ;\n  color: #fff ;\n  border-radius: 3px;\n  opacity: 1 ;\n}\n.md-tooltip.md-origin-bottom {\n  margin-top: -6px;\n  margin-left: -8px;\n}\n.node-red-ui--notabs {\n  color: #888;\n  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n  opacity: 1;\n  animation-name: fadeInOpacity;\n  animation-iteration-count: 1;\n  animation-timing-function: ease-in;\n  animation-duration: 2.5s;\n}\n.node-red-ui--loading {\n  color: #888;\n  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;\n  display: flex;\n  height: 100%;\n  width: 100%;\n  align-items: center;\n  justify-content: center;\n}\n.node-red-ui--inline-link {\n  width: 100%;\n  height: 100%;\n  position: absolute;\n}\n.node-red-ui--inline-link iframe {\n  width: 100%;\n  height: 100%;\n}\n.material-icons {\n  vertical-align: middle;\n}\n.ie9 img[src$=\".svg\"] {\n  width: 100%;\n}\n@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {\n  img[src$=\".svg\"] {\n    width: 100%;\n  }\n}\n@keyframes fadeInOpacity {\n  0% {\n    opacity: 0;\n  }\n  30% {\n    opacity: 0;\n  }\n  100% {\n    opacity: 1;\n  }\n}\n.flip-icon {\n  animation: flip-icon 0.3s linear both;\n}\n@keyframes flip-icon {\n  0% {\n    transform: rotateY(180deg);\n  }\n  100% {\n    transform: rotateY(0deg);\n  }\n}\n@supports (-ms-overflow-style: none) {\n  overflow: auto ;\n}\n/*\n    ALL COMPONENTS/CONTENT\n*/\n:root {\n  --nr-dashboard-pageBackgroundColor: #f7f7f7;\n  --nr-dashboard-pageTitlebarBackgroundColor: #20c200;\n  --nr-dashboard-pageSidebarBackgroundColor: #ffffff;\n  --nr-dashboard-groupTextColor: #1bbfff;\n  --nr-dashboard-groupBackgroundColor: #ffffff;\n  --nr-dashboard-groupBorderColor: #ffffff;\n  --nr-dashboard-widgetTextColor: #000000;\n  --nr-dashboard-widgetBackgroundColor: #20c200;\n  --nr-dashboard-widgetBorderColor: #ffffff;\n  --nr-dashboard-widgetColor: #20c200;\n  --nr-dashboard-widgetBgndColor: #ffffff;\n}\n.nr-dashboard-disabled {\n  opacity: 0.4 ;\n  pointer-events: none ;\n}\nbody.nr-dashboard-theme {\n  background-color: #f7f7f7;\n  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;\n}\nbody.nr-dashboard-theme md-content {\n  background: transparent;\n  height: 100%;\n  color: #1bbfff;\n}\nbody.nr-dashboard-theme md-input-container.md-input-focused:not([md-no-float]) .md-select-placeholder span:first-child {\n  -webkit-transform: translateY(-28px) scale(0.75);\n  transform: translateY(-28px) scale(0.75);\n}\nbody.nr-dashboard-theme md-input-container.md-input-focused:not(.md-input-has-value) md-select .md-select-value.md-select-placeholder {\n  color: #000000;\n}\nbody.nr-dashboard-theme md-content md-card {\n  background-color: #ffffff;\n  color: #000000;\n}\n/* Some colour classes */\nbody.nr-dashboard-theme .nr-dashboard-color {\n  color: #1bbfff;\n}\nbody.nr-dashboard-theme .nr-dashboard-error {\n  color: #ff2929;\n}\nbody.nr-dashboard-theme .nr-dashboard-warning {\n  color: #eaf42f;\n}\nbody.nr-dashboard-theme .nr-dashboard-ok {\n  color: #49db3c;\n}\nbody.nr-dashboard-theme .nr-dashboard-dim {\n  opacity: 0.5 ;\n}\n/*\n    DASHBOARD HEADER\n*/\nbody.nr-dashboard-theme md-toolbar {\n  background-color: #20c200;\n  color: #fff;\n}\nbody.nr-dashboard-theme md-toolbar .md-toolbar-tools {\n  color: #fff;\n  filter: invert(0%);\n}\n/*\n    DASHBOARD SIDEBAR\n*/\nbody.nr-dashboard-theme md-sidenav {\n  color: #1bbfff;\n  background-color: #ffffff;\n}\nbody.nr-dashboard-theme md-sidenav md-list-item._md-button-wrap > div.md-button:first-child {\n  background-color: transparent;\n}\nbody.nr-dashboard-theme md-sidenav div.md-list-item-inner {\n  color: #1bbfff;\n  background-color: transparent;\n}\na.md-no-style,\nbutton.md-no-style {\n  background-color: transparent;\n}\n.nr-menu-item-active div button {\n  border-right: 4px solid #1bbfff;\n}\n/*\n    GROUP SPECIFIC\n*/\n.nr-dashboard-theme ui-card-panel {\n  background-color: #ffffff;\n  border: 1px solid #ffffff;\n}\n.nr-dashboard-theme ui-card-panel p.nr-dashboard-cardtitle {\n  color: #1bbfff;\n}\n/*\n    COMPONENT-SPECIFIC\n*/\n.nr-dashboard-theme .nr-dashboard-spacer {\n  opacity: 0;\n}\n.md-button.md-default-theme.md-primary,\n.md-button.md-primary {\n  background-color: #20c200 ;\n  color: white;\n}\n.nr-dashboard-theme .md-button[disabled] {\n  color: rgba(0, 0, 0, 0.38);\n  cursor: default;\n}\n/* Button */\n.nr-dashboard-theme .nr-dashboard-button .md-button {\n  background-color: #20c200;\n  color: white;\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button:hover {\n  background-color: #25e100;\n}\n.nr-dashboard-theme .nr-dashboard-template .md-button[disabled] {\n  color: #888;\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button.md-primary {\n  color: white;\n  background-color: #23d600;\n}\n.nr-dashboard-theme .nr-dashboard-button .md-button.md-raised:not([disabled]).md-focused {\n  background-color: #20c200;\n}\n\n/* Dropdown */\n.nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value,\n.nr-dashboard-theme .nr-dashboard-dropdown md-select .md-select-value.md-select-placeholder {\n  color: #000000;\n  border-color: #000000;\n  border-bottom-width: 1px;\n  padding: 0px 2px;\n}\n.nr-dashboard-theme .nr-dashboard-dropdown .md-select-icon {\n  color: #000000;\n}\n.nr-dashboard-theme .md-select-menu-container {\n  max-height: 85%;\n  overflow-y: auto;\n  border: 1px solid #20c200;\n}\n.nr-dashboard-theme md-select-menu {\n  margin-left: -2px;\n  max-height: 85%;\n}\n.nr-dashboard-theme md-select-menu md-content {\n  padding: 0px;\n  max-height: 85%;\n}\n.nr-dashboard-theme md-select-menu,\n.nr-dashboard-theme md-select-menu md-option {\n  background-color: #ffffff;\n  color: #000000;\n}\n.nr-dashboard-theme md-select-menu md-option[selected] {\n  color: #1bbfff ;\n  background-color: #ffffff ;\n}\n.nr-dashboard-theme md-select-menu[multiple] md-option.md-checkbox-enabled[selected] .md-icon {\n  background-color: #28f500 ;\n  border-color: transparent ;\n}\n.nr-dashboard-theme md-select-menu[multiple] md-option.md-checkbox-enabled .md-icon {\n  border-color: #20c200 ;\n}\n.nr-dashboard-theme md-select-menu.md-default-theme md-option:focus:not([disabled]):not([selected]),\nmd-select-menu md-option:focus:not([disabled]):not([selected]) {\n  background-color: #ffffff;\n}\n.nr-dashboard-theme md-select-menu md-option:hover {\n  background-color: #23d600 ;\n}\n.nr-dashboard-theme md-menu-content {\n  background-color: #ffffff;\n  color: #000000;\n}\n.nr-dashboard-theme md-menu-content md-menu-item {\n  background-color: #ffffff;\n  color: #000000;\n}\n\n/* Switch */\n.nr-dashboard-theme .nr-dashboard-switch md-switch .md-bar {\n  background-color: rgba(111, 111, 111, 0.5);\n}\n.nr-dashboard-theme .nr-dashboard-switch md-switch.md-checked .md-bar {\n  background-color: rgba(32, 194, 0, 0.5);\n}\n.nr-dashboard-theme .nr-dashboard-switch md-switch .md-thumb {\n  background-color: #949494;\n}\n.nr-dashboard-theme .nr-dashboard-switch md-switch.md-checked .md-thumb {\n  background-color: #20c200;\n}\n\n/* Text */\n/* Dialog */\n.nr-dashboard-theme md-dialog {\n  color: #000000;\n  background-color: #ffffff;\n  border: 3px solid #ffffff;\n}\n.nr-dashboard-theme .md-dialog-content {\n  padding: 24px;\n}\n.nr-dashboard-theme md-input-container.md-default-theme .md-input,\nmd-input-container .md-input {\n  color: #000000;\n  border-color: #20c200 ;\n}\n</style>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "global",
+        "className": "",
+        "x": 290,
+        "y": 120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ce3728b25ea2107",
+        "type": "udp out",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "addr": "255.255.255.255",
+        "iface": "",
+        "port": "7777",
+        "ipv": "udp4",
+        "outport": "",
+        "base64": false,
+        "multicast": "broad",
+        "x": 420,
+        "y": 780,
+        "wires": []
+    },
+    {
+        "id": "9876c7d1da96b53a",
+        "type": "udp in",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "iface": "",
+        "port": "7777",
+        "ipv": "udp4",
+        "multicast": "false",
+        "group": "",
+        "datatype": "utf8",
+        "x": 120,
+        "y": 820,
+        "wires": [
+            [
+                "3f50b3883e65f790"
+            ]
+        ]
+    },
+    {
+        "id": "3f50b3883e65f790",
+        "type": "ui_text",
+        "z": "45818cf04cbf91f2",
+        "group": "3d0be2025415dd2d",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "UDP listen",
+        "format": "{{msg.payload}}",
+        "layout": "col-center",
+        "className": "",
+        "x": 370,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "a683ade8c0fb61dc",
+        "type": "ui_button",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "group": "3d0be2025415dd2d",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "UDP Scan",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "{{payload ? 'grey':'#20c200'}}",
+        "className": "",
+        "icon": "",
+        "payload": "mqtt:1883",
+        "payloadType": "str",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 130,
+        "y": 780,
+        "wires": [
+            [
+                "6ce3728b25ea2107"
+            ]
+        ]
+    }
+]

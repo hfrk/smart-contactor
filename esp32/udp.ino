@@ -2,8 +2,8 @@
 #include <WiFiUdp.h>
 WiFiUDP Udp;
 
-const char* ssid = "XSS";
-const char* password = "electrocuted";
+const char* ssid = "";
+const char* password = "";
 
 unsigned int localUdpPort = 7777;  // local port to listen on
 char incomingPacket[255];  // buffer for incoming packets

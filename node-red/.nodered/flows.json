@@ -481,6 +481,32 @@
         "className": ""
     },
     {
+        "id": "b6ad7754b1ab45ef",
+        "type": "mqtt-broker",
+        "name": "HFRK",
+        "broker": "hfrk.de",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
         "id": "be26b35251046708",
         "type": "mqtt in",
         "z": "2a13e96f16ed63a2",
@@ -488,7 +514,7 @@
         "topic": "status/ESP1",
         "qos": "2",
         "datatype": "auto",
-        "broker": "4c4edb30b951f7f0",
+        "broker": "b6ad7754b1ab45ef",
         "nl": false,
         "rap": true,
         "rh": 0,
@@ -497,7 +523,8 @@
         "y": 80,
         "wires": [
             [
-                "01257af953396932"
+                "01257af953396932",
+                "04faee3b4f44c906"
             ]
         ]
     },
@@ -601,35 +628,6 @@
         ]
     },
     {
-        "id": "6e9b0bd193b79bd8",
-        "type": "inject",
-        "z": "2a13e96f16ed63a2",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "1",
-        "crontab": "",
-        "once": true,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "ESP1.Relay1",
-        "payloadType": "flow",
-        "x": 130,
-        "y": 140,
-        "wires": [
-            [
-                "5444513684d57964"
-            ]
-        ]
-    },
-    {
         "id": "cae391e9b1d8cd63",
         "type": "mqtt out",
         "z": "2a13e96f16ed63a2",
@@ -642,7 +640,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "4c4edb30b951f7f0",
+        "broker": "b6ad7754b1ab45ef",
         "x": 500,
         "y": 140,
         "wires": []
@@ -680,10 +678,10 @@
                 "vt": "str"
             }
         ],
-        "repeat": "1",
+        "repeat": "0.01",
         "crontab": "",
         "once": true,
-        "onceDelay": 0.1,
+        "onceDelay": "0",
         "topic": "ESP1",
         "payloadType": "date",
         "x": 130,
@@ -691,7 +689,8 @@
         "wires": [
             [
                 "0b9388c8b05e5041",
-                "291cc34d04e38dcf"
+                "291cc34d04e38dcf",
+                "616b2ed4d2fed52f"
             ]
         ]
     },
@@ -883,7 +882,7 @@
         "userProps": "",
         "correl": "",
         "expiry": "",
-        "broker": "4c4edb30b951f7f0",
+        "broker": "b6ad7754b1ab45ef",
         "x": 750,
         "y": 360,
         "wires": []
@@ -974,6 +973,42 @@
         "y": 400,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "04faee3b4f44c906",
+        "type": "ui_text",
+        "z": "2a13e96f16ed63a2",
+        "group": "fc95b4bc0b9795a3",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 300,
+        "y": 20,
+        "wires": []
+    },
+    {
+        "id": "616b2ed4d2fed52f",
+        "type": "function",
+        "z": "2a13e96f16ed63a2",
+        "name": "",
+        "func": "if (flow.get(msg.topic)?.Relay1 && flow.get(msg.topic+\"status\")) {\n  msg.payload = true;\n} else {\n  msg.payload = false;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 140,
+        "y": 140,
+        "wires": [
+            [
+                "5444513684d57964"
+            ]
         ]
     },
     {
@@ -4505,10 +4540,9 @@
         "id": "f1557e97f7bc37c7",
         "type": "aedes broker",
         "z": "45818cf04cbf91f2",
-        "d": true,
         "name": "",
         "mqtt_port": 1883,
-        "mqtt_ws_bind": "port",
+        "mqtt_ws_bind": "path",
         "mqtt_ws_port": "",
         "mqtt_ws_path": "",
         "cert": "",
@@ -4520,47 +4554,9 @@
         "x": 390,
         "y": 60,
         "wires": [
-            [
-                "c93d7b7709b2fde5"
-            ],
-            [
-                "dd785beb045d902d"
-            ]
+            [],
+            []
         ]
-    },
-    {
-        "id": "c93d7b7709b2fde5",
-        "type": "debug",
-        "z": "45818cf04cbf91f2",
-        "name": "event",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 570,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "dd785beb045d902d",
-        "type": "debug",
-        "z": "45818cf04cbf91f2",
-        "name": "publish",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 580,
-        "y": 80,
-        "wires": []
     },
     {
         "id": "b182bdf20d0ac4b8",
@@ -5033,50 +5029,6 @@
         "wires": []
     },
     {
-        "id": "bce3d58cf20c03fe",
-        "type": "ui_template",
-        "z": "45818cf04cbf91f2",
-        "d": true,
-        "group": "464e97acc22bf0dc",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<div></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "fc116699bb6080de",
-        "type": "ui_template",
-        "z": "45818cf04cbf91f2",
-        "d": true,
-        "group": "c0f1ffbd16bd257b",
-        "name": "",
-        "order": 1,
-        "width": 0,
-        "height": 0,
-        "format": "<div></div>",
-        "storeOutMessages": true,
-        "fwdInMessages": true,
-        "resendOnRefresh": true,
-        "templateScope": "local",
-        "className": "",
-        "x": 660,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "3050fc0fc8f5b939",
         "type": "ui_template",
         "z": "45818cf04cbf91f2",
@@ -5110,7 +5062,7 @@
         "base64": false,
         "multicast": "broad",
         "x": 420,
-        "y": 780,
+        "y": 720,
         "wires": []
     },
     {
@@ -5125,7 +5077,7 @@
         "group": "",
         "datatype": "utf8",
         "x": 120,
-        "y": 820,
+        "y": 760,
         "wires": [
             [
                 "3f50b3883e65f790"
@@ -5146,7 +5098,7 @@
         "layout": "col-center",
         "className": "",
         "x": 370,
-        "y": 820,
+        "y": 760,
         "wires": []
     },
     {
@@ -5170,11 +5122,123 @@
         "topic": "topic",
         "topicType": "msg",
         "x": 130,
-        "y": 780,
+        "y": 720,
         "wires": [
             [
                 "6ce3728b25ea2107"
             ]
         ]
+    },
+    {
+        "id": "32d35f7712198f5c",
+        "type": "ui_button",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "group": "fc95b4bc0b9795a3",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 180,
+        "wires": [
+            [
+                "6f8aaeb89c859649"
+            ]
+        ]
+    },
+    {
+        "id": "0c0e9c81935bf391",
+        "type": "ui_button",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "group": "fc95b4bc0b9795a3",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "button",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "x": 340,
+        "y": 220,
+        "wires": [
+            [
+                "6f8aaeb89c859649"
+            ]
+        ]
+    },
+    {
+        "id": "6f8aaeb89c859649",
+        "type": "mqtt out",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "topic": "fff",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "4c4edb30b951f7f0",
+        "x": 470,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "10b638a8ab7fc70c",
+        "type": "mqtt in",
+        "z": "45818cf04cbf91f2",
+        "name": "",
+        "topic": "fff",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "4c4edb30b951f7f0",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 480,
+        "y": 120,
+        "wires": [
+            [
+                "46b120562dca3f1b"
+            ]
+        ]
+    },
+    {
+        "id": "46b120562dca3f1b",
+        "type": "ui_text",
+        "z": "45818cf04cbf91f2",
+        "group": "fc95b4bc0b9795a3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "text",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "x": 620,
+        "y": 120,
+        "wires": []
     }
 ]

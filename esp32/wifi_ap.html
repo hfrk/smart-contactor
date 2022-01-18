@@ -55,8 +55,8 @@ p {
   margin: 20px;
   cursor: pointer;
 }
-.red {background-color: red;}
-.green {background-color: green;}
+.red {color: white; background-color: red;}
+.green {color: white; background-color: green;}
 .switch {
   display: none;
   position: relative;
@@ -126,9 +126,7 @@ p {
       </div>
       <h2 style="color: green">on</h2>
       <noscript>
-        <div class="buttons">
-          <a href="/" class="button red">Off</a>
-        </div>
+        <a href="/" class="red">Off</a>
       </noscript>
     </div>
   </div>
@@ -140,7 +138,7 @@ p {
       <label for="pass">WiFi Password:</label><br>
       <input type="password" id="pass" name="pass" placeholder="(kosongkan jika WiFi open)"><br>
       <label for="mqtt">MQTT Server:</label><br>
-      <input type="text" id="mqtt" name="mqtt" placeholder="192.168.xxx.xxx:port" pattern="((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)(\.|$)){4}"><br>
+      <input type="text" id="mqtt" name="mqtt" placeholder="192.168.xxx.xxx:port"><br>
       <input type="submit" class="button btn-submit" value="Submit">
     </form>
   </div>

@@ -209,7 +209,7 @@ void start_softAP() {
 }
 
 void start_STA(const char* STASSID, const char* STAPSK, const char* MQTT, int port) {
-  WiFi.mode(WIFI_AP_STA);
+  WiFi.mode(WIFI_STA);
   WiFi.begin(STASSID, STAPSK);
   Serial.printf("Connecting to %s", STASSID);
   while (WiFi.status() != WL_CONNECTED) {
